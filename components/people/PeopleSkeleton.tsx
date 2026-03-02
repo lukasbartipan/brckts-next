@@ -45,10 +45,7 @@ export const PeopleSkeleton = ({
         </div>
       ) : null}
 
-      <div
-        className="grid gap-6"
-        style={{ gridTemplateColumns: "repeat(5, minmax(0, 1fr))" }}
-      >
+      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
         {skeletonItems.map((index) => (
           <div
             key={`skeleton-${index}`}

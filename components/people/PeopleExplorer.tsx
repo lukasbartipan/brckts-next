@@ -306,11 +306,10 @@ export const PeopleExplorer = ({ people }: PeopleExplorerProps) => {
           <motion.div
             animate="visible"
             aria-hidden={showGridSkeleton}
-            className={`grid gap-6 ${
+            className={`grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 ${
               showGridSkeleton ? "invisible pointer-events-none" : ""
             }`}
             initial="hidden"
-            style={{ gridTemplateColumns: "repeat(5, minmax(0, 1fr))" }}
             tabIndex={showGridSkeleton ? -1 : undefined}
             variants={{
               visible: {
